@@ -16,7 +16,7 @@
                     <view key="view" contentMode="scaleToFill" id="w0r-Mw-2VH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.70704573010000005" green="0.56770008890000001" blue="0.90078519570000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ons-Jf-Zci" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -34,7 +34,7 @@
                     <view key="view" contentMode="scaleToFill" id="EpU-jG-OaV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.28853744269999998" green="0.36937154719999998" blue="0.55924479169999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7wU-Sc-OnM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="314" y="228"/>
         </scene>
-        <!--View Controller-->
+        <!--Second-->
         <scene sceneID="cEq-zj-guW">
             <objects>
-                <viewController id="58z-MS-JXE" sceneMemberID="viewController">
+                <viewController id="58z-MS-JXE" customClass="Second" customModule="AfternoonTransitions" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P1e-Ln-qv6"/>
                         <viewControllerLayoutGuide type="bottom" id="TGE-Vj-U8B"/>
@@ -78,12 +78,12 @@
                     <view key="view" contentMode="scaleToFill" id="vj9-A0-pUG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.24101403320000001" green="0.19351462329999999" blue="0.30705492420000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0CU-vv-e3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="317" y="903"/>
+            <point key="canvasLocation" x="-174" y="1015"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -106,11 +106,22 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzD-4U-ccy">
-                                <rect key="frame" x="255" y="161" width="91" height="30"/>
+                                <rect key="frame" x="255" y="173" width="91" height="30"/>
                                 <state key="normal" title="Screen Two"/>
+                                <connections>
+                                    <action selector="buttonTwoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IDX-y7-bkK"/>
+                                    <segue destination="58z-MS-JXE" kind="show" identifier="toSecondFromMain" id="2Gx-Xb-wsH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tv8-90-yG8">
+                                <rect key="frame" x="254" y="234" width="92" height="30"/>
+                                <state key="normal" title="Screen Three"/>
+                                <connections>
+                                    <segue destination="REb-e4-rCN" kind="show" identifier="toThreeFromMain" id="b0m-0W-j0a"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.90052281140435397" blue="0.80174775995656145" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
