@@ -11,4 +11,10 @@ import UIKit
 class UpdatedViewController : UIViewController
 {
     
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+    }
 }
