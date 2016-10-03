@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 
     @IBAction func buttonClicked(sender: UIButton)
     {
-        performSequeithIdentifier("toUpdatedFromMain", sender: sender)
+        performSegueWithIdentifier("toUpdatedFromMain", sender: sender)
     }
 
 }
