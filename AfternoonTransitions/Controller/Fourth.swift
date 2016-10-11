@@ -1,14 +1,15 @@
 //
-//  Third.swift
+//  Fourth.swift
 //  AfternoonTransitions
 //
-//  Created by Bowen, Isaac on 10/3/16.
+//  Created by Bowen, Isaac on 10/5/16.
 //  Copyright © 2016 Bowen, Isaac. All rights reserved.
 //
 
 import UIKit
 
-internal class Third : UIViewController {
+internal class Fourth : UIViewController
+{
     
     
     override func viewDidLoad() {
@@ -20,7 +21,6 @@ internal class Third : UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
+
     
 }

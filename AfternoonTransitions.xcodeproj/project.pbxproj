@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8B2E8051DA573F500B09F4A /* Fourth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B2E8041DA573F500B09F4A /* Fourth.swift */; };
 		D8E0F6A11DA2D00500AD1FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E0F6A01DA2D00500AD1FCF /* AppDelegate.swift */; };
 		D8E0F6A31DA2D00500AD1FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E0F6A21DA2D00500AD1FCF /* ViewController.swift */; };
 		D8E0F6A61DA2D00500AD1FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E0F6A41DA2D00500AD1FCF /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D8B2E8041DA573F500B09F4A /* Fourth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fourth.swift; path = Controller/Fourth.swift; sourceTree = "<group>"; };
 		D8E0F69D1DA2D00500AD1FCF /* AfternoonTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfternoonTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E0F6A01DA2D00500AD1FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8E0F6A21DA2D00500AD1FCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				D8E0F6A21DA2D00500AD1FCF /* ViewController.swift */,
 				D8E0F6A41DA2D00500AD1FCF /* Main.storyboard */,
 				D8E0F6A71DA2D00500AD1FCF /* Assets.xcassets */,
+				D8B2E8041DA573F500B09F4A /* Fourth.swift */,
 				D8E0F6A91DA2D00500AD1FCF /* LaunchScreen.storyboard */,
 				D8E0F6AC1DA2D00500AD1FCF /* Info.plist */,
 				D8E0F6B41DA2D33200AD1FCF /* UpdatedViewController.swift */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E0F6B91DA2E89200AD1FCF /* Third.swift in Sources */,
+				D8B2E8051DA573F500B09F4A /* Fourth.swift in Sources */,
 				D8E0F6B51DA2D33200AD1FCF /* UpdatedViewController.swift in Sources */,
 				D8E0F6A31DA2D00500AD1FCF /* ViewController.swift in Sources */,
 				D8E0F6A11DA2D00500AD1FCF /* AppDelegate.swift in Sources */,
@@ -298,6 +302,7 @@
 				D8E0F6B11DA2D00500AD1FCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

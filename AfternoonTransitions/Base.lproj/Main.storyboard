@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1912" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Third-->
         <scene sceneID="vty-KJ-es8">
             <objects>
-                <viewController id="REb-e4-rCN" sceneMemberID="viewController">
+                <viewController id="REb-e4-rCN" customClass="Third" customModule="AfternoonTransitions" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Prf-fs-Szb"/>
                         <viewControllerLayoutGuide type="bottom" id="q0O-Aw-lqM"/>
@@ -16,30 +16,88 @@
                     <view key="view" contentMode="scaleToFill" id="w0r-Mw-2VH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jY7-5v-k4E">
+                                <rect key="frame" x="283" y="31" width="34" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.92885890149999994" green="0.82469430249999998" blue="0.66661987020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="fromThirdToMain" id="udW-ng-iTu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Family" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azz-Ch-gyM">
+                                <rect key="frame" x="243" y="69" width="114" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.90052281140000001" blue="0.80174776000000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="I have five people in my family, and in age order their names are Daniel, Melisa, Isaac (Me), Adam and Sarah respectively." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCu-hB-iXV">
+                                <rect key="frame" x="98" y="203" width="405" height="280"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="0.90052281140000001" blue="0.80174776000000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="0.70704573010000005" green="0.56770008890000001" blue="0.90078519570000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eCu-hB-iXV" firstAttribute="centerX" secondItem="w0r-Mw-2VH" secondAttribute="centerX" id="8X5-uk-3q2"/>
+                            <constraint firstItem="jY7-5v-k4E" firstAttribute="centerX" secondItem="w0r-Mw-2VH" secondAttribute="centerX" id="96c-63-qYr"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ons-Jf-Zci" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-715" y="-445"/>
+            <point key="canvasLocation" x="133" y="1139"/>
         </scene>
-        <!--View Controller-->
+        <!--Fourth-->
         <scene sceneID="RU6-4O-tko">
             <objects>
-                <viewController id="Y3R-qN-1XC" sceneMemberID="viewController">
+                <viewController id="Y3R-qN-1XC" customClass="Fourth" customModule="AfternoonTransitions" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fj2-9G-Elz"/>
                         <viewControllerLayoutGuide type="bottom" id="JbE-AB-xZn"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="EpU-jG-OaV">
+                    <view key="view" contentMode="scaleToFill" id="EpU-jG-OaV" customClass="Fourth">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPR-TM-vQk">
+                                <rect key="frame" x="283" y="38" width="34" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.92885890149999994" green="0.82469430249999998" blue="0.66661987020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="custom" identifier="fromFourthToBack" id="NkA-4h-XlM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qp-3a-7N7">
+                                <rect key="frame" x="247" y="92" width="107" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.90052281140000001" blue="0.80174776000000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAi-mS-CKu">
+                                <rect key="frame" x="98" y="213" width="405" height="280"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">I have a love for playing music and am in the band Urban Saints playing the keyboard. I make songs in my free time a own Logic pro X.</string>
+                                <color key="textColor" red="1" green="0.90052281140000001" blue="0.80174776000000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="0.28853744269999998" green="0.36937154719999998" blue="0.55924479169999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JPR-TM-vQk" firstAttribute="centerX" secondItem="EpU-jG-OaV" secondAttribute="centerX" id="OUN-fU-Ik2"/>
+                            <constraint firstItem="2qp-3a-7N7" firstAttribute="centerX" secondItem="EpU-jG-OaV" secondAttribute="centerX" id="oM2-ck-it5"/>
+                            <constraint firstItem="hAi-mS-CKu" firstAttribute="centerX" secondItem="EpU-jG-OaV" secondAttribute="centerX" id="uYW-KM-5k9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7wU-Sc-OnM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="313" y="-437"/>
+            <point key="canvasLocation" x="-1273" y="1133"/>
         </scene>
         <!--Updated View Controller-->
         <scene sceneID="GTf-AW-xrr">
@@ -53,19 +111,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphone" translatesAutoresizingMaskIntoConstraints="NO" id="Sj8-XG-jBn">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxB-Ea-yZO">
+                                <rect key="frame" x="283" y="33" width="34" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.92885890149999994" green="0.82469430249999998" blue="0.66661987020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" identifier="fromUpdatedToMain" id="wv4-Gj-VWl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Future" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRV-YJ-z2d">
+                                <rect key="frame" x="244" y="71" width="113" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.90052281140000001" blue="0.80174776000000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEu-7j-dM4">
+                                <rect key="frame" x="98" y="206" width="405" height="317"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">I hope to go to college for a degree in Computer Science and then freelancing to build websites and potentially do film or music part time.</string>
+                                <color key="textColor" red="1" green="0.90052281140000001" blue="0.80174776000000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.4696479819685751" green="0.59202284971485464" blue="0.69075520833333326" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LxB-Ea-yZO" firstAttribute="centerX" secondItem="CuM-tI-b0g" secondAttribute="centerX" id="S1k-el-fLH"/>
+                            <constraint firstItem="xEu-7j-dM4" firstAttribute="centerX" secondItem="CuM-tI-b0g" secondAttribute="centerX" id="kpX-vv-bHt"/>
+                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="backgroundImage" destination="Sj8-XG-jBn" id="JZu-ay-35U"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dg0-zt-flZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="314" y="228"/>
+            <point key="canvasLocation" x="782" y="1139"/>
         </scene>
         <!--Second-->
         <scene sceneID="cEq-zj-guW">
@@ -78,12 +157,42 @@
                     <view key="view" contentMode="scaleToFill" id="vj9-A0-pUG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.24101403320000001" green="0.19351462329999999" blue="0.30705492420000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNm-3e-N8j">
+                                <rect key="frame" x="270" y="36" width="60" height="30"/>
+                                <size key="titleShadowOffset" width="4" height="4"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.92885890149999994" green="0.82469430249999998" blue="0.66661987020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="fromSecondToMain" id="vZM-d9-hSu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Film" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLf-KO-Tcs">
+                                <rect key="frame" x="264" y="83" width="73" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.90052281140000001" blue="0.80174776000000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLz-HZ-73N">
+                                <rect key="frame" x="98" y="209" width="405" height="280"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">I have a love for making films. This is my favorite thing to do with my time and consequently I am nearly constantly making a new film.</string>
+                                <color key="textColor" red="1" green="0.90052281140000001" blue="0.80174776000000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89514283459595956" green="0.66667083888259493" blue="0.80456376420190112" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mNm-3e-N8j" firstAttribute="centerX" secondItem="vj9-A0-pUG" secondAttribute="centerX" id="4D5-kC-9Ts"/>
+                            <constraint firstItem="cLz-HZ-73N" firstAttribute="centerX" secondItem="vj9-A0-pUG" secondAttribute="centerX" id="Ze2-zx-AnE"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0CU-vv-e3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-174" y="1015"/>
+            <point key="canvasLocation" x="-552" y="1139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -97,39 +206,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQW-lB-vkO">
-                                <rect key="frame" x="249" y="103" width="102" height="30"/>
-                                <state key="normal" title="Screen One"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQW-lB-vkO">
+                                <rect key="frame" x="249" y="150" width="102" height="30"/>
+                                <state key="normal" title="Future"/>
                                 <connections>
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mYs-ih-nMr"/>
                                     <segue destination="M4b-wz-n2R" kind="show" identifier="toUpdatedFromMain" id="Sxx-xV-nM3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzD-4U-ccy">
-                                <rect key="frame" x="255" y="173" width="91" height="30"/>
-                                <state key="normal" title="Screen Two"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzD-4U-ccy">
+                                <rect key="frame" x="255" y="230" width="91" height="30"/>
+                                <state key="normal" title="Film"/>
                                 <connections>
                                     <action selector="buttonTwoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IDX-y7-bkK"/>
                                     <segue destination="58z-MS-JXE" kind="show" identifier="toSecondFromMain" id="2Gx-Xb-wsH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tv8-90-yG8">
-                                <rect key="frame" x="254" y="234" width="92" height="30"/>
-                                <state key="normal" title="Screen Three"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tv8-90-yG8">
+                                <rect key="frame" x="278" y="324" width="44" height="30"/>
+                                <state key="normal" title="Family"/>
                                 <connections>
                                     <segue destination="REb-e4-rCN" kind="show" identifier="toThreeFromMain" id="b0m-0W-j0a"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xE-9r-hpD">
+                                <rect key="frame" x="280" y="415" width="41" height="30"/>
+                                <state key="normal" title="Music"/>
+                                <connections>
+                                    <segue destination="Y3R-qN-1XC" kind="show" identifier="fromMainToFourth" id="jXF-u1-jPa"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.90052281140435397" blue="0.80174775995656145" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.92885890151515149" green="0.82469430250861031" blue="0.6666198702223497" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fQW-lB-vkO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9X9-bi-6mm"/>
+                            <constraint firstItem="jzD-4U-ccy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G9a-Gj-dhp"/>
+                            <constraint firstItem="tv8-90-yG8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PN7-EU-qGN"/>
+                            <constraint firstItem="1xE-9r-hpD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n0a-uQ-EvL"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-344" y="228"/>
+            <point key="canvasLocation" x="-254" y="330"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="iphone" width="750" height="1334"/>
-    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wv4-Gj-VWl"/>
+    </inferredMetricsTieBreakers>
 </document>
